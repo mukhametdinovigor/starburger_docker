@@ -3,10 +3,11 @@ version: '3.7'
 services:
   web:
     build: .
-    command: sh -c "python manage.py migrate && python manage.py collectstatic --no-input && gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --reload"
+#    command: sh -c "python manage.py migrate && python manage.py collectstatic --no-input && gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --reload"
+    command: sh -c "gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --reload"
     volumes:
-      - .:/app/
-      - static_volume:/app/static
+      - .:/star-burger/
+      - static_volume:/star-burger/static
     expose:
       - 8000
     depends_on:
@@ -15,7 +16,7 @@ services:
     build: ./nginx
     volumes:
 #      - /nginx:/etc/nginx/conf.d
-      - static_volume:/app/static
+      - static_volume:/star-burger/static
     ports:
       - 80:80
     depends_on:
@@ -25,9 +26,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=myprojectuser
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=myproject
+      - POSTGRES_USER=starburger_user
+      - POSTGRES_PASSWORD=4735833
+      - POSTGRES_DB=starburger
 
 volumes:
   postgres_data:

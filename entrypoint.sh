@@ -13,6 +13,10 @@ fi
 #python3 manage.py collectstatic --no-input
 #python manage.py flush --no-input
 #python manage.py migrate
-#python manage.py loaddata db.json
+npm install --dev
+npm install -g parcel@latest
+parcel build bundles-src/index.js --dist-dir bundles --public-url="./"
+python3 manage.py collectstatic --no-input
+python3 manage.py migrate
 
 exec "$@"
