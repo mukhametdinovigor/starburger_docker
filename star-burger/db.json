@@ -1,0 +1,3615 @@
+[
+{
+  "model": "foodcartapp.restaurant",
+  "pk": 1,
+  "fields": {
+    "name": "Star Burger Арбат",
+    "address": "Москва, ул. Новый Арбат, 15",
+    "contact_phone": "+7 (967) 157-44-13"
+  }
+},
+{
+  "model": "foodcartapp.restaurant",
+  "pk": 2,
+  "fields": {
+    "name": "Star Burger Цветной",
+    "address": "Москва, Цветной бульвар, 11с2",
+    "contact_phone": "+7 (929) 949-55-36"
+  }
+},
+{
+  "model": "foodcartapp.restaurant",
+  "pk": 3,
+  "fields": {
+    "name": "Star Burger Европейский",
+    "address": "Москва, пл. Киевского Вокзала, 2",
+    "contact_phone": "+7 (929) 680-47-58"
+  }
+},
+{
+  "model": "foodcartapp.productcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Бургер"
+  }
+},
+{
+  "model": "foodcartapp.productcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Ролл"
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Стейкхаус",
+    "category": 1,
+    "price": "269.00",
+    "image": "steak_lrS2094.jpg",
+    "special_status": false,
+    "description": "Стейкхаус – это сочетание нашей фирменной, приготовленной на огне 100% говядины с ломтиками бекона и соусом «Барбекю», майонезом, листьями свежего салата, помидором и хрустящим луком на воздушной булочке, посыпанной кукурузной крошкой."
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "Лонг Чизбургер",
+    "category": 1,
+    "price": "219.00",
+    "image": "long_chiz_Wy5GbXm.jpg",
+    "special_status": false,
+    "description": "Лонг Чизбургер – эталон в коллекции чизбургеров! Два приготовленных на огне бифштекса с двумя ломтиками слегка расплавленного сыра, хрустящими огурчиками, рубленым луком, горчицей и кетчупом на длинной подрумяненной булочке с кунжутом."
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "Тройной Воппер",
+    "category": 1,
+    "price": "369.00",
+    "image": "triple_vopper_e5lCMZF.jpg",
+    "special_status": false,
+    "description": "ВОППЕР® — это вкуснейшая приготовленная на огне 100% говядина с сочными помидорами, свежим нарезанным листовым салатом, густым майонезом, хрустящими маринованными огурчиками и свежим луком на нежной булочке с кунжутом."
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "Беконайзер",
+    "category": 1,
+    "price": "319.00",
+    "image": "beconizer_ZUctSis.jpg",
+    "special_status": false,
+    "description": "Встречай самый внушительный бургер в коллекции Бургер Кинг. Много мяса, много бекона и много сыра - все, как ты любишь, и ничего лишнего!"
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "Фиш Ролл",
+    "category": 2,
+    "price": "199.00",
+    "image": "fish_roll_AMIQf5w.jpg",
+    "special_status": false,
+    "description": "Наш новый ролл с аппетитной котлеткой из филе белой рыбы, с фирменным соусом, маринованными огурчиками и хрустящим салатом. Легкое рыбное удовольствие!"
+  }
+},
+{
+  "model": "foodcartapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "Шримп Ролл",
+    "category": 2,
+    "price": "209.00",
+    "image": "shrimp_roll_NIJbmIs.jpg",
+    "special_status": false,
+    "description": "Легкий ролл с нежными королевскими креветками в хрустящей панировке, свежий салат Айсберг и ломтик сыра в пшеничной лепешке под фирменным соусом «Кинг». Внимание! Блюдо содержит аллергены – морепродукты."
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 1,
+  "fields": {
+    "restaurant": 1,
+    "product": 1,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 2,
+  "fields": {
+    "restaurant": 2,
+    "product": 1,
+    "availability": false
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 3,
+  "fields": {
+    "restaurant": 3,
+    "product": 1,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 4,
+  "fields": {
+    "restaurant": 1,
+    "product": 3,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 5,
+  "fields": {
+    "restaurant": 2,
+    "product": 3,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 6,
+  "fields": {
+    "restaurant": 3,
+    "product": 3,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 7,
+  "fields": {
+    "restaurant": 1,
+    "product": 2,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 8,
+  "fields": {
+    "restaurant": 2,
+    "product": 2,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 9,
+  "fields": {
+    "restaurant": 3,
+    "product": 2,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 10,
+  "fields": {
+    "restaurant": 1,
+    "product": 4,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 11,
+  "fields": {
+    "restaurant": 2,
+    "product": 4,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 12,
+  "fields": {
+    "restaurant": 3,
+    "product": 4,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 13,
+  "fields": {
+    "restaurant": 1,
+    "product": 6,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 14,
+  "fields": {
+    "restaurant": 2,
+    "product": 6,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 15,
+  "fields": {
+    "restaurant": 3,
+    "product": 6,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 16,
+  "fields": {
+    "restaurant": 1,
+    "product": 5,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 17,
+  "fields": {
+    "restaurant": 2,
+    "product": 5,
+    "availability": true
+  }
+},
+{
+  "model": "foodcartapp.restaurantmenuitem",
+  "pk": 18,
+  "fields": {
+    "restaurant": 3,
+    "product": 5,
+    "availability": false
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 39,
+  "fields": {
+    "firstname": "Василий",
+    "lastname": "Васильев",
+    "phonenumber": "+79148556840",
+    "address": "Новосибирск Федосеева 12",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T03:53:58.323Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 40,
+  "fields": {
+    "firstname": "Иван",
+    "lastname": "Иванов",
+    "phonenumber": "+79452584568",
+    "address": "США",
+    "status": "Обработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T09:49:29Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 41,
+  "fields": {
+    "firstname": "Илон",
+    "lastname": "Петровln",
+    "phonenumber": "+79148554587",
+    "address": "Красноярск",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T09:50:29.317Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 42,
+  "fields": {
+    "firstname": "ф",
+    "lastname": "а",
+    "phonenumber": "+79452584568",
+    "address": "Мяунджа",
+    "status": "Обработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T09:54:12Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 43,
+  "fields": {
+    "firstname": "Иван",
+    "lastname": "Иванов",
+    "phonenumber": "+79148556840",
+    "address": "Новая Зеландия",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T09:56:14.216Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 44,
+  "fields": {
+    "firstname": "Василий",
+    "lastname": "sdvsdvsvs",
+    "phonenumber": "+79148554587",
+    "address": "Брянск",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T10:06:03Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 45,
+  "fields": {
+    "firstname": "Джон",
+    "lastname": "Смит",
+    "phonenumber": "+79148556840",
+    "address": "Калининград",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T11:43:50.609Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 46,
+  "fields": {
+    "firstname": "Иван",
+    "lastname": "Иванов",
+    "phonenumber": "+79148556840",
+    "address": "Москва Кремль",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-09-14T11:45:14.121Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderdetails",
+  "pk": 47,
+  "fields": {
+    "firstname": "вар",
+    "lastname": "вар",
+    "phonenumber": "+79148584548",
+    "address": "сша",
+    "status": "Необработанный",
+    "payment_method": "",
+    "restaurant": null,
+    "comments": "",
+    "created_at": "2021-10-12T13:29:12.162Z",
+    "called_at": null,
+    "delivered_at": null
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 74,
+  "fields": {
+    "order": 39,
+    "product": 1,
+    "quantity": 1,
+    "position_cost": "269.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 75,
+  "fields": {
+    "order": 39,
+    "product": 2,
+    "quantity": 1,
+    "position_cost": "219.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 76,
+  "fields": {
+    "order": 40,
+    "product": 1,
+    "quantity": 1,
+    "position_cost": "269.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 77,
+  "fields": {
+    "order": 40,
+    "product": 2,
+    "quantity": 1,
+    "position_cost": "219.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 78,
+  "fields": {
+    "order": 40,
+    "product": 3,
+    "quantity": 1,
+    "position_cost": "369.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 79,
+  "fields": {
+    "order": 41,
+    "product": 5,
+    "quantity": 1,
+    "position_cost": "199.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 80,
+  "fields": {
+    "order": 41,
+    "product": 6,
+    "quantity": 1,
+    "position_cost": "209.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 81,
+  "fields": {
+    "order": 42,
+    "product": 4,
+    "quantity": 1,
+    "position_cost": "319.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 82,
+  "fields": {
+    "order": 42,
+    "product": 2,
+    "quantity": 1,
+    "position_cost": "219.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 83,
+  "fields": {
+    "order": 42,
+    "product": 3,
+    "quantity": 1,
+    "position_cost": "369.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 84,
+  "fields": {
+    "order": 43,
+    "product": 4,
+    "quantity": 1,
+    "position_cost": "319.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 85,
+  "fields": {
+    "order": 44,
+    "product": 4,
+    "quantity": 1,
+    "position_cost": "319.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 86,
+  "fields": {
+    "order": 44,
+    "product": 2,
+    "quantity": 1,
+    "position_cost": "219.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 87,
+  "fields": {
+    "order": 45,
+    "product": 4,
+    "quantity": 1,
+    "position_cost": "319.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 88,
+  "fields": {
+    "order": 46,
+    "product": 4,
+    "quantity": 1,
+    "position_cost": "319.00"
+  }
+},
+{
+  "model": "foodcartapp.orderitem",
+  "pk": 89,
+  "fields": {
+    "order": 47,
+    "product": 1,
+    "quantity": 1,
+    "position_cost": "269.00"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 1,
+  "fields": {
+    "address": "Магадан ул. Ленина д. 1",
+    "lat": "59.568241",
+    "lon": "150.809646",
+    "update_date": "2021-08-21T20:56:41.108Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 2,
+  "fields": {
+    "address": "Москва, ул. Новый Арбат, 15",
+    "lat": "55.752141",
+    "lon": "37.59242",
+    "update_date": "2021-08-21T20:56:42.875Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 3,
+  "fields": {
+    "address": "Москва, Цветной бульвар, 11с2",
+    "lat": "55.770076",
+    "lon": "37.620429",
+    "update_date": "2021-08-21T20:56:45.217Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 4,
+  "fields": {
+    "address": "Москва, пл. Киевского Вокзала, 2",
+    "lat": "55.744637",
+    "lon": "37.566072",
+    "update_date": "2021-08-21T20:56:47.791Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 5,
+  "fields": {
+    "address": "Москва Фестивальная  д.5 кв.15",
+    "lat": "55.854658",
+    "lon": "37.473851",
+    "update_date": "2021-08-21T20:56:56.289Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 6,
+  "fields": {
+    "address": "США",
+    "lat": "36.952915",
+    "lon": "-99.115868",
+    "update_date": "2021-08-21T21:35:27.982Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 7,
+  "fields": {
+    "address": "Москва Фя  д.5 кв.15",
+    "lat": "55.671382",
+    "lon": "37.300638",
+    "update_date": "2021-09-13T03:46:33.255Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 8,
+  "fields": {
+    "address": "Новосибирск Федосеева 12",
+    "lat": "55.036329",
+    "lon": "82.965238",
+    "update_date": "2021-09-14T03:54:05.436Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 9,
+  "fields": {
+    "address": "Красноярск",
+    "lat": "56.010569",
+    "lon": "92.852572",
+    "update_date": "2021-09-14T09:50:31.481Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 10,
+  "fields": {
+    "address": "Мяунджа",
+    "lat": "63.051545",
+    "lon": "147.181081",
+    "update_date": "2021-09-14T09:54:14.429Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 11,
+  "fields": {
+    "address": "Новая Зеландия",
+    "lat": "-44.069583",
+    "lon": "170.455747",
+    "update_date": "2021-09-14T09:56:23.628Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 12,
+  "fields": {
+    "address": "Брянск",
+    "lat": "53.243562",
+    "lon": "34.363425",
+    "update_date": "2021-09-14T10:06:13.369Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 13,
+  "fields": {
+    "address": "Калининград",
+    "lat": "54.710162",
+    "lon": "20.510137",
+    "update_date": "2021-09-14T11:43:52.991Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 14,
+  "fields": {
+    "address": "Москва Кремль",
+    "lat": "55.752004",
+    "lon": "37.617734",
+    "update_date": "2021-09-14T11:45:18.517Z"
+  }
+},
+{
+  "model": "place.place",
+  "pk": 15,
+  "fields": {
+    "address": "сша",
+    "lat": "36.952915",
+    "lon": "-99.115868",
+    "update_date": "2021-10-12T13:29:16.483Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-08-09T19:43:03.437Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "1",
+    "object_repr": "Star Burger Арбат",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-08-09T19:43:19.579Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "2",
+    "object_repr": "Star Burger Цветной",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-08-09T19:43:32.726Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "3",
+    "object_repr": "Star Burger Европейский",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-08-09T19:44:04.169Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Бургер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-08-09T19:45:28.461Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-08-09T19:45:56.654Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Лонг Чизбургер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-08-09T19:46:56.804Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "Тройной Воппер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0422\\u0440\\u043e\\u0439\\u043d\\u043e\\u0439 \\u0412\\u043e\\u043f\\u043f\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0422\\u0440\\u043e\\u0439\\u043d\\u043e\\u0439 \\u0412\\u043e\\u043f\\u043f\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0422\\u0440\\u043e\\u0439\\u043d\\u043e\\u0439 \\u0412\\u043e\\u043f\\u043f\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-08-09T19:47:22.325Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Лонг Чизбургер",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u041b\\u043e\\u043d\\u0433 \\u0427\\u0438\\u0437\\u0431\\u0443\\u0440\\u0433\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u041b\\u043e\\u043d\\u0433 \\u0427\\u0438\\u0437\\u0431\\u0443\\u0440\\u0433\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u041b\\u043e\\u043d\\u0433 \\u0427\\u0438\\u0437\\u0431\\u0443\\u0440\\u0433\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-08-09T19:48:17.200Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "Беконайзер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0411\\u0435\\u043a\\u043e\\u043d\\u0430\\u0439\\u0437\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0411\\u0435\\u043a\\u043e\\u043d\\u0430\\u0439\\u0437\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0411\\u0435\\u043a\\u043e\\u043d\\u0430\\u0439\\u0437\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-08-09T19:48:30.688Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Ролл",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-08-09T19:48:54.172Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "5",
+    "object_repr": "Фиш Ролл",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-08-09T19:49:41.244Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "6",
+    "object_repr": "Шримп Ролл",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0428\\u0440\\u0438\\u043c\\u043f \\u0420\\u043e\\u043b\\u043b\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0428\\u0440\\u0438\\u043c\\u043f \\u0420\\u043e\\u043b\\u043b\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0428\\u0440\\u0438\\u043c\\u043f \\u0420\\u043e\\u043b\\u043b\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-08-09T19:50:15.226Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "5",
+    "object_repr": "Фиш Ролл",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0424\\u0438\\u0448 \\u0420\\u043e\\u043b\\u043b\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0424\\u0438\\u0448 \\u0420\\u043e\\u043b\\u043b\"}}, {\"added\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0424\\u0438\\u0448 \\u0420\\u043e\\u043b\\u043b\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-08-09T21:40:37.425Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Иван Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u044d\\u043b\\u0435\\u043c\\u0435\\u043d\\u0442 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"object\": \"\\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\", \"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-08-11T11:44:19.624Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "Андрей Васильев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u044d\\u043b\\u0435\\u043c\\u0435\\u043d\\u0442 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"object\": \"\\u041b\\u043e\\u043d\\u0433 \\u0427\\u0438\\u0437\\u0431\\u0443\\u0440\\u0433\\u0435\\u0440 \\u0410\\u043d\\u0434\\u0440\\u0435\\u0439 \\u0412\\u0430\\u0441\\u0438\\u043b\\u044c\\u0435\\u0432\", \"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2021-08-11T12:17:20.238Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "Андрей Васильев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u044d\\u043b\\u0435\\u043c\\u0435\\u043d\\u0442 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"object\": \"\\u041b\\u043e\\u043d\\u0433 \\u0427\\u0438\\u0437\\u0431\\u0443\\u0440\\u0433\\u0435\\u0440 \\u0410\\u043d\\u0434\\u0440\\u0435\\u0439 \\u0412\\u0430\\u0441\\u0438\\u043b\\u044c\\u0435\\u0432\", \"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2021-08-11T13:01:49.338Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "8",
+    "object_repr": "Иван sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2021-08-11T13:01:50.023Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "7",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2021-08-11T13:01:50.374Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2021-08-11T13:01:50.654Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "ф sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2021-08-11T13:01:50.922Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "Андрей Васильев",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2021-08-11T13:02:41.456Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2021-08-11T13:03:33.951Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2021-08-11T13:15:02.456Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2021-08-11T19:13:28.169Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "10",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2021-08-11T19:13:28.418Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "9",
+    "object_repr": "RLKJELJKL sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2021-08-11T19:35:53.339Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "16",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2021-08-11T19:35:53.980Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "15",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2021-08-11T19:35:54.223Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "14",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2021-08-11T19:35:54.468Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "13",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2021-08-11T19:35:54.724Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2021-08-11T19:35:54.970Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2021-08-11T19:36:46.212Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "Беконайзер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2021-08-11T20:20:38.979Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "21",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2021-08-11T20:20:39.366Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "20",
+    "object_repr": "Илон а",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2021-08-11T20:20:39.708Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "19",
+    "object_repr": "RLKJELJKL sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2021-08-11T20:20:40.141Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "18",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2021-08-11T20:20:40.395Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "17",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2021-08-11T20:26:34.851Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "22",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2021-08-11T21:16:42.670Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2021-08-11T21:20:53.916Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илонодрм Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2021-08-11T21:21:36.397Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрерв Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2021-08-11T21:22:24.298Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2021-08-11T21:23:06.523Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрвякп Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2021-08-11T21:29:58.387Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрвякп Петровln",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2021-08-11T21:31:20.578Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрвякп Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2021-08-12T11:38:33.048Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрв Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2021-08-12T11:40:49.058Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрввыа Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2021-08-12T11:42:43.108Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петрвв Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2021-08-12T11:44:00.279Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петров Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2021-08-12T11:44:35.276Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2021-08-12T11:49:26.185Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2021-08-12T11:49:56.327Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2021-08-12T11:50:08.363Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2021-08-12T11:50:30.831Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2021-08-12T11:50:54.672Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2021-08-12T11:51:25.390Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2021-08-12T12:20:37.436Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2021-08-12T12:37:51.805Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2021-08-12T12:38:07.961Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2021-08-12T12:38:20.560Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2021-08-12T12:39:06.340Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2021-08-12T12:39:18.805Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2021-08-12T12:39:26.881Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2021-08-12T12:40:01.161Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2021-08-12T12:41:15.156Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "Василий Васильев",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2021-08-12T12:41:25.498Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2021-08-12T12:42:05.419Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "Василий Васильев",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2021-08-12T12:42:13.920Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "Василий Васильев",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2021-08-12T19:35:19.367Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0438 \\u043a \\u0437\\u0430\\u043a\\u0430\\u0437\\u0443\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2021-08-12T19:58:01.508Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u0437\\u0432\\u043e\\u043d\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2021-08-12T19:58:24.080Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u0434\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2021-08-12T19:58:39.161Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "Василий Васильев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u0434\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2021-08-12T20:03:35.190Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0438 \\u043a \\u0437\\u0430\\u043a\\u0430\\u0437\\u0443\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2021-08-12T20:04:19.516Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "Беконайзер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2021-08-12T20:06:02.369Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "Петр Петровln",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u0437\\u0432\\u043e\\u043d\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2021-08-12T20:06:15.878Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "Петр Петровln",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2021-08-12T20:21:06.834Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2021-08-12T20:21:29.275Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2021-08-12T20:21:44.373Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "Петр Петровln",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2021-08-13T20:22:01.273Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2021-08-13T20:23:40.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2021-08-13T20:31:24.071Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "Петр Петровln",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2021-08-13T20:31:24.505Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "Василий Васильев",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2021-08-13T20:39:46.406Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2021-08-13T20:40:38.679Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "5",
+    "object_repr": "Фиш Ролл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0424\\u0438\\u0448 \\u0420\\u043e\\u043b\\u043b\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2021-08-13T20:40:46.495Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2021-08-13T22:41:43.035Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "7",
+    "object_repr": "Василий sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2021-08-13T22:41:43.575Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Илон Маск",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2021-08-13T22:41:43.769Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Иван Сидоров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2021-08-16T05:53:16.196Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "9",
+    "object_repr": "RLKJELJKL Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2021-08-16T05:53:16.442Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "8",
+    "object_repr": "RLKJELJKL sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2021-08-16T05:53:16.708Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Петр Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2021-08-16T05:53:50.166Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2021-08-16T12:24:21.921Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "10",
+    "object_repr": "Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2021-08-16T12:29:16.433Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "10",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2021-08-16T12:29:40.797Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2021-08-16T12:30:04.772Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2021-08-16T12:33:07.063Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2021-08-16T12:33:35.646Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2021-08-16T13:07:09.017Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "Магадан ул. Ленина д. 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2021-08-16T13:08:20.393Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "Магадан ул. Ленина д. 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2021-08-16T13:09:35.301Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "Магадан ул. Ленина д. 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2021-08-16T13:15:34.476Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2021-08-16T13:18:50.846Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "Магадан ул. Ленина д. 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2021-08-16T13:18:51.378Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "Москва, пл. Киевского Вокзала, 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2021-08-16T13:18:51.777Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Москва, ул. Новый Арбат, 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2021-08-16T13:18:52.017Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "США",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2021-08-16T13:18:52.276Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Москва, Цветной бульвар, 11с2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2021-08-16T13:18:52.512Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Москва Фестивальная  д.5 кв.15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2021-08-16T13:18:59.547Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "10",
+    "object_repr": "Санкт Петербург",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2021-08-16T13:21:04.105Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2021-08-20T13:45:03.831Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2021-08-20T13:45:14.394Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2021-08-20T13:46:38.094Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2021-08-20T13:48:18.789Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2021-08-20T13:50:44.599Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2021-08-20T13:50:53.958Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2021-08-21T12:11:30.289Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "13",
+    "object_repr": "Иван а",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2021-08-21T12:44:02.240Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "13",
+    "object_repr": "Иван а",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2021-08-21T12:44:02.500Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2021-08-21T12:44:02.720Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "Василий Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2021-08-21T12:46:26.454Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "14",
+    "object_repr": "Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043b\\u0430\\u0442\\u0435\\u0436\\u043d\\u044b\\u0439 \\u043c\\u0435\\u0442\\u043e\\u0434\", \"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2021-08-21T21:36:13.838Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "14",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2021-08-22T02:03:37.658Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "17",
+    "object_repr": "Василий Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2021-08-22T02:03:37.958Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "16",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2021-08-22T02:03:38.241Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "15",
+    "object_repr": "Василий Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2021-08-22T02:12:51.102Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "19",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2021-08-22T02:20:21.656Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "20",
+    "object_repr": "Василий Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2021-08-22T02:34:00.666Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "21",
+    "object_repr": "Иван sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2021-09-09T04:49:01.492Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "18",
+    "object_repr": "Иван Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2021-09-09T04:49:13.563Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "25",
+    "object_repr": "RLKJELJKL sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2021-09-09T04:49:13.845Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "24",
+    "object_repr": "Василий Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2021-09-09T04:49:14.067Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "23",
+    "object_repr": "Василий Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2021-09-09T04:51:42.160Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "1",
+    "object_repr": "Star Burger Арбат",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2021-09-09T05:22:34.898Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "28",
+    "object_repr": "Андрей Сидоров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\", \"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2021-09-09T05:22:42.777Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "27",
+    "object_repr": "Иван Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2021-09-13T03:40:05.328Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "29",
+    "object_repr": "Илон sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2021-09-13T03:40:05.978Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "28",
+    "object_repr": "Андрей Сидоров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2021-09-13T03:40:06.396Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "27",
+    "object_repr": "Иван Петров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2021-09-13T03:40:07.289Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "26",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2021-09-13T03:40:07.759Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "22",
+    "object_repr": "Василий Петровln",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2021-09-13T05:06:02.427Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "31",
+    "object_repr": "Евгений Сидоров",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2021-09-13T05:06:02.766Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "30",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2021-09-13T05:10:40.738Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "33",
+    "object_repr": "Илон Васильев",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2021-09-13T05:10:41.414Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "32",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2021-09-13T11:37:29.913Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "36",
+    "object_repr": "Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2021-09-14T03:40:31.579Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "38",
+    "object_repr": "Петр Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2021-09-14T03:40:31.845Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "37",
+    "object_repr": "RLKJELJKL а",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2021-09-14T03:40:32.070Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "36",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2021-09-14T03:40:32.303Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "35",
+    "object_repr": "ф sdvsdvsvs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2021-09-14T03:40:32.515Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "34",
+    "object_repr": "Иван Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2021-09-14T10:06:56.993Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "44",
+    "object_repr": "Василий sdvsdvsvs",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2021-09-14T10:48:52.512Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}, {\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2021-09-14T11:01:28.777Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2021-09-14T11:22:11.023Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2021-09-14T11:39:37.408Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0426\\u0432\\u0435\\u0442\\u043d\\u043e\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2021-09-14T11:39:57.980Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2021-09-14T11:40:24.215Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Стейкхаус",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0410\\u0440\\u0431\\u0430\\u0442 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}, {\"changed\": {\"name\": \"\\u043f\\u0443\\u043d\\u043a\\u0442 \\u043c\\u0435\\u043d\\u044e \\u0440\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\\u0430\", \"object\": \"Star Burger \\u0415\\u0432\\u0440\\u043e\\u043f\\u0435\\u0439\\u0441\\u043a\\u0438\\u0439 - \\u0421\\u0442\\u0435\\u0439\\u043a\\u0445\\u0430\\u0443\\u0441\", \"fields\": [\"\\u0412 \\u043f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2021-09-14T11:41:41.938Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "42",
+    "object_repr": "ф а",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2021-09-14T11:41:55.731Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "40",
+    "object_repr": "Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add товар",
+    "content_type": 1,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change товар",
+    "content_type": 1,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete товар",
+    "content_type": 1,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view товар",
+    "content_type": 1,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add ресторан",
+    "content_type": 2,
+    "codename": "add_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change ресторан",
+    "content_type": 2,
+    "codename": "change_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete ресторан",
+    "content_type": 2,
+    "codename": "delete_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view ресторан",
+    "content_type": 2,
+    "codename": "view_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add пункт меню ресторана",
+    "content_type": 3,
+    "codename": "add_restaurantmenuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change пункт меню ресторана",
+    "content_type": 3,
+    "codename": "change_restaurantmenuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete пункт меню ресторана",
+    "content_type": 3,
+    "codename": "delete_restaurantmenuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view пункт меню ресторана",
+    "content_type": 3,
+    "codename": "view_restaurantmenuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add категория",
+    "content_type": 4,
+    "codename": "add_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change категория",
+    "content_type": 4,
+    "codename": "change_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete категория",
+    "content_type": 4,
+    "codename": "delete_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view категория",
+    "content_type": 4,
+    "codename": "view_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add Заказ",
+    "content_type": 5,
+    "codename": "add_customerorderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change Заказ",
+    "content_type": 5,
+    "codename": "change_customerorderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete Заказ",
+    "content_type": 5,
+    "codename": "delete_customerorderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view Заказ",
+    "content_type": 5,
+    "codename": "view_customerorderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add элемент заказа",
+    "content_type": 6,
+    "codename": "add_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change элемент заказа",
+    "content_type": 6,
+    "codename": "change_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete элемент заказа",
+    "content_type": 6,
+    "codename": "delete_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view элемент заказа",
+    "content_type": 6,
+    "codename": "view_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add some class",
+    "content_type": 7,
+    "codename": "add_someclass"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change some class",
+    "content_type": 7,
+    "codename": "change_someclass"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete some class",
+    "content_type": 7,
+    "codename": "delete_someclass"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view some class",
+    "content_type": 7,
+    "codename": "view_someclass"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 8,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 8,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 8,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 8,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 9,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 9,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 9,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 9,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 10,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 10,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 10,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 10,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 11,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 11,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 11,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 11,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 12,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 12,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 12,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 12,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 13,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 13,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 13,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 13,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add place",
+    "content_type": 14,
+    "codename": "add_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change place",
+    "content_type": 14,
+    "codename": "change_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete place",
+    "content_type": 14,
+    "codename": "delete_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view place",
+    "content_type": 14,
+    "codename": "view_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Заказ",
+    "content_type": 5,
+    "codename": "add_orderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Заказ",
+    "content_type": 5,
+    "codename": "change_orderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Заказ",
+    "content_type": 5,
+    "codename": "delete_orderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Заказ",
+    "content_type": 5,
+    "codename": "view_orderdetails"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Место",
+    "content_type": 15,
+    "codename": "add_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Место",
+    "content_type": 15,
+    "codename": "change_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Место",
+    "content_type": 15,
+    "codename": "delete_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Место",
+    "content_type": 15,
+    "codename": "view_place"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add элемент заказа",
+    "content_type": 6,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change элемент заказа",
+    "content_type": 6,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete элемент заказа",
+    "content_type": 6,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view элемент заказа",
+    "content_type": 6,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$oDhMxzjMe0HuVxcOrK8ImT$4+cf2+QLph1GGNXXb+hsGwdDi76B6doxtf7eoyG0EOQ=",
+    "last_login": "2021-10-28T02:13:26.231Z",
+    "is_superuser": true,
+    "username": "igor",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-08-09T19:41:15.789Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "restaurant"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "restaurantmenuitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "productcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "orderdetails"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "someclass"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "foodcartapp",
+    "model": "place"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "place",
+    "model": "place"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0c8g12vvub9lhyqvjddbnn2g257pdczg",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8Cy7d-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2ZlJdvrdENKD2g7yHdqt89TbuszId4UfdPBrz_S8HO7fQYVRv7URFkXAoKVDlcAIo4NXTko9SUgpZ0RFrhjhzWS9sj6XQAWCJYVKJMveH8INN2g:1mfuv0:9Sq89ovQlCralTyqPSV-M4ZLPP0gPeb7h4wciUOguyA",
+    "expire_date": "2021-11-11T02:13:26.374Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l60ds08b9nbsdc77h9a46rlh7b90h0v7",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8Cy7d-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2ZlJdvrdENKD2g7yHdqt89TbuszId4UfdPBrz_S8HO7fQYVRv7URFkXAoKVDlcAIo4NXTko9SUgpZ0RFrhjhzWS9sj6XQAWCJYVKJMveH8INN2g:1mfuv0:9Sq89ovQlCralTyqPSV-M4ZLPP0gPeb7h4wciUOguyA",
+    "expire_date": "2021-11-11T02:13:26.254Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pzs8v0whb3b7cotu25k0gbiyte2ahmif",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8Cy7d-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2ZlJdvrdENKD2g7yHdqt89TbuszId4UfdPBrz_S8HO7fQYVRv7URFkXAoKVDlcAIo4NXTko9SUgpZ0RFrhjhzWS9sj6XQAWCJYVKJMveH8INN2g:1maHqz:8K9B3nR8KN7tPDDsuCbR8Kpg0ctRdSEr3hvpcOgMtzg",
+    "expire_date": "2021-10-26T13:30:01.506Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rwghttve1a6kt8mzfwoo8lkqo86p12s3",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8Cy7d-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2ZlJdvrdENKD2g7yHdqt89TbuszId4UfdPBrz_S8HO7fQYVRv7URFkXAoKVDlcAIo4NXTko9SUgpZ0RFrhjhzWS9sj6XQAWCJYVKJMveH8INN2g:1mbuCf:NfIXpZn4OgfWvvUTC0FcSpbYS2ZOBaJO5UT4AFNMWW0",
+    "expire_date": "2021-10-31T00:39:05.352Z"
+  }
+}
+]
