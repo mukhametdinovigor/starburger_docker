@@ -3,11 +3,11 @@ version: '3.7'
 services:
   web:
     build: .
-#    command: sh -c "python manage.py migrate && python manage.py collectstatic --no-input && gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --reload"
-    command: sh -c "gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --reload"
+    command: sh -c "gunicorn --bind 0.0.0.0:8000 --chdir /star-burger/star-burger/ star_burger.wsgi:application --reload"
     volumes:
       - .:/star-burger/
-      - static_volume:/star-burger/static
+      - static_volume:/star-burger/star-burger/static
+      - media_volume:/star-burger/star-burger/media
     expose:
       - 8000
     depends_on:
@@ -15,8 +15,8 @@ services:
   nginx:
     build: ./nginx
     volumes:
-#      - /nginx:/etc/nginx/conf.d
-      - static_volume:/star-burger/static
+      - static_volume:/star-burger/star-burger/static
+      - media_volume:/star-burger/star-burger/media
     ports:
       - 80:80
     depends_on:
@@ -33,3 +33,4 @@ services:
 volumes:
   postgres_data:
   static_volume:
+  media_volume:
