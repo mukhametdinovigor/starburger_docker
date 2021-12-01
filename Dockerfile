@@ -14,8 +14,11 @@ RUN rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/*.list
 
 
 RUN pip3 install -r requirements.txt
-RUN sed -i 's/\r$//g'/star-burger/star-burger/entrypoint.sh
-RUN chmod +x /star-burger/star-burger/entrypoint.sh
+
 COPY . .
+
+RUN sed -i 's/\r$//g' /star-burger/star-burger/entrypoint.sh
+RUN chmod +x /star-burger/star-burger/entrypoint.sh
+
 
 ENTRYPOINT ["/star-burger/star-burger/entrypoint.sh"]
