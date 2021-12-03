@@ -33,13 +33,26 @@ Cоздать файл `.env` в каталоге `star_burger/` со следу
 - `DATABASE_URL` - настройка БД, для postgres выглядит так: `postgres://USER:PASSWORD@HOST:PORT/NAME`
 
 
-Сайт запускается с помощью `docker compose` в трёх контейнерах:
+Сайт запускается с помощью `docker compose` в четырех контейнерах:
 
 - база `postgres`
 - контейнер с `nginx`
-- контейнер с сайтом
+- контейнер с `django`
+- контейнер с собранным фронтендом
 
 Запустить сборку образов `docker-compose build`, запустить compose `docker-compose up -d`
+
+После этого необходимо сделать миграции в базу:
+
+```
+docker-compose exec web python star-burger/manage.py migrate
+```
+
+И собрать статику:
+
+```
+docker-compose exec web python star-burger/manage.py collectstatic --no-input --clear
+```
 
 Также для загрузки свежего кода на сервер запустите скрипт
 
