@@ -16,12 +16,40 @@
 Третий интерфейс — это админка. Преимущественно им пользуются программисты при разработке сайта. Также сюда заходит менеджер, чтобы обновить меню ресторанов Star Burger.
 
 
+Сайт запускается с помощью `docker compose` в четырех контейнерах:
 
-## Как запустить
+- база `postgres`
+- контейнер с `nginx`
+- контейнер с `django`
+- контейнер с собранным фронтендом
+
+## Запуск dev окружения
 
 Скачать код с `github`
 
-Cоздать файл `.env` в каталоге `star_burger/` со следующими настройками:
+Cоздать файл `.env.dev` в корне проекта со следующими настройками:
+
+- `DEBUG` — дебаг-режим. Поставьте `True`.
+- `SECRET_KEY` — секретный ключ проекта. Он отвечает за шифрование на сайте. Например, им зашифрованы все пароли на вашем сайте. Не стоит использовать значение по-умолчанию, **замените на своё**.
+- `ALLOWED_HOSTS` — [см. документацию Django](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts)
+- `YANDEX_GEOCODE_APIKEY` - API Яндекс-геокодера. Для получения координат места.
+                            Получите API ключ в [кабинете разработчика](https://developer.tech.yandex.ru/services/)
+- `ROLLBAR_TOKEN` - токен для системы логирования ROLLBAR [Сайт ROLLBAR](https://rollbar.com/)
+- `ROLLBAR_ENVIRONMENT` - настройка environment в Rollbar, задайте свое значение например `your_name_dev`
+- `DATABASE_URL` - настройка БД, для postgres выглядит так: `postgres://USER:PASSWORD@HOST:PORT/NAME`
+
+Запустить скрипт
+
+```
+./dev_env.sh
+```
+
+
+## Запуск prod окружения
+
+Скачать код с `github`
+
+Cоздать файл `.env.prod` в корне проекта со следующими настройками:
 
 - `DEBUG` — дебаг-режим. Поставьте `False`.
 - `SECRET_KEY` — секретный ключ проекта. Он отвечает за шифрование на сайте. Например, им зашифрованы все пароли на вашем сайте. Не стоит использовать значение по-умолчанию, **замените на своё**.
@@ -32,27 +60,13 @@ Cоздать файл `.env` в каталоге `star_burger/` со следу
 - `ROLLBAR_ENVIRONMENT` - настройка environment в Rollbar, задайте свое значение например `your_name_prod`
 - `DATABASE_URL` - настройка БД, для postgres выглядит так: `postgres://USER:PASSWORD@HOST:PORT/NAME`
 
-
-Сайт запускается с помощью `docker compose` в четырех контейнерах:
-
-- база `postgres`
-- контейнер с `nginx`
-- контейнер с `django`
-- контейнер с собранным фронтендом
-
-Запустить сборку образов `docker-compose build`, запустить compose `docker-compose up -d`
-
-После этого необходимо сделать миграции в базу:
+Запустить скрипт
 
 ```
-docker-compose exec web python star-burger/manage.py migrate
+./prod_env.sh
 ```
 
-И собрать статику:
-
-```
-docker-compose exec web python star-burger/manage.py collectstatic --no-input --clear
-```
+## Как обновить код на сервере 
 
 Также для загрузки свежего кода на сервер запустите скрипт
 
