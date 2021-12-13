@@ -15,10 +15,11 @@ services:
     depends_on:
       - frontend
   nginx:
-    build: ./nginx
+    image: nginx:1.21-alpine
     volumes:
       - static_volume:/star-burger/star-burger/static
       - media_volume:/star-burger/star-burger/media
+      - conf:/etc/nginx/conf.d
     restart: always
     ports:
       - 80:80
@@ -48,3 +49,4 @@ volumes:
   static_volume:
   media_volume:
   bundles_volume:
+  conf:
