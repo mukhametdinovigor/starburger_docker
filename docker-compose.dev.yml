@@ -13,7 +13,7 @@ services:
     ports:
       - 80:8000
     depends_on:
-      - frontend
+      - db
   db:
     image: postgres:13.0-alpine
     volumes:
