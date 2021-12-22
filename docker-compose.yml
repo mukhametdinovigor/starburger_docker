@@ -38,7 +38,6 @@ services:
     build:
       context: ./
       dockerfile: ./frontend/Dockerfile
-    command: parcel watch bundles-src/index.js --dist-dir bundles --public-url="./"
     volumes:
       - static_volume:/star-burger/star-burger/static
       - bundles_volume:/star-burger/bundles
