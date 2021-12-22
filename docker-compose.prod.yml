@@ -5,7 +5,6 @@ services:
     build: .
     command: sh -c "gunicorn --bind 0.0.0.0:8000 --chdir /star-burger/star-burger/ star_burger.wsgi:application --reload"
     volumes:
-      - .:/star-burger/
       - static_volume:/star-burger/star-burger/static
       - media_volume:/star-burger/star-burger/media
       - bundles_volume:/star-burger/star-burger/bundles
@@ -13,7 +12,7 @@ services:
     expose:
       - 8000
     depends_on:
-      - frontend
+      - db
   nginx:
     image: nginx:1.21-alpine
     volumes:
